@@ -1,0 +1,31 @@
+.link-after {
+    content: '';
+    display: block;
+    height: .15em;
+    background: #43d6b5;
+}
+
+.nav-link, .navbar-brand {
+    &:hover{
+        text-decoration: underline 3px #43d6b5;
+        
+}
+    text-transform: lowercase;
+}
+
+.nav-item.active {
+    font-weight: bold;
+    text-decoration: underline 3px #43d6b5;
+
+}
+
+.navbar-brand {
+    margin-bottom: 0px !important;
+    &::after {
+        margin-top: -.25em;
+    }
+}
+
+.navbar-toggler{
+    border: none;
+}

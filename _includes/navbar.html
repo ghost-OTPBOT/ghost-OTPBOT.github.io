@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-themed">
+
+    <a class="navbar-brand" href="/" aria-label="Home" ><i><svg class="branding" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M22.1875 6.125L14.4375 18.7917C13.5834 20.1667 14.5834 21.9583 16.2084 21.9583H31.6875C33.3125 21.9583 34.3125 20.1667 33.4584 18.7917L25.7292 6.125C24.9167 4.79167 23 4.79167 22.1875 6.125Z" fill="#FFA000"/>
+      <path d="M35.4167 26.125C32.0673 26.125 28.9724 27.9119 27.2977 30.8125C25.623 33.7131 25.623 37.2869 27.2977 40.1875C28.9724 43.0881 32.0673 44.875 35.4167 44.875C38.7661 44.875 41.861 43.0881 43.5357 40.1875C45.2104 37.2869 45.2104 33.7131 43.5357 30.8125C41.861 27.9119 38.7661 26.125 35.4167 26.125V26.125Z" fill="#EC407A"/>
+      <path d="M7.29168 43.8333H19.7917C20.9375 43.8333 21.875 42.8958 21.875 41.75V29.25C21.875 28.1042 20.9375 27.1667 19.7917 27.1667H7.29168C6.14584 27.1667 5.20834 28.1042 5.20834 29.25V41.75C5.20834 42.8958 6.14584 43.8333 7.29168 43.8333Z" fill="#29B6F6"/>
+      </svg>
+      
+      </i></a>
+  
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <svg class="icon-svg-themed" width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 8H21C21.2652 8 21.5196 7.89464 21.7071 7.70711C21.8946 7.51957 22 7.26522 22 7C22 6.73478 21.8946 6.48043 21.7071 6.29289C21.5196 6.10536 21.2652 6 21 6H3C2.73478 6 2.48043 6.10536 2.29289 6.29289C2.10536 6.48043 2 6.73478 2 7C2 7.26522 2.10536 7.51957 2.29289 7.70711C2.48043 7.89464 2.73478 8 3 8ZM21 16H3C2.73478 16 2.48043 16.1054 2.29289 16.2929C2.10536 16.4804 2 16.7348 2 17C2 17.2652 2.10536 17.5196 2.29289 17.7071C2.48043 17.8946 2.73478 18 3 18H21C21.2652 18 21.5196 17.8946 21.7071 17.7071C21.8946 17.5196 22 17.2652 22 17C22 16.7348 21.8946 16.4804 21.7071 16.2929C21.5196 16.1054 21.2652 16 21 16ZM21 11H3C2.73478 11 2.48043 11.1054 2.29289 11.2929C2.10536 11.4804 2 11.7348 2 12C2 12.2652 2.10536 12.5196 2.29289 12.7071C2.48043 12.8946 2.73478 13 3 13H21C21.2652 13 21.5196 12.8946 21.7071 12.7071C21.8946 12.5196 22 12.2652 22 12C22 11.7348 21.8946 11.4804 21.7071 11.2929C21.5196 11.1054 21.2652 11 21 11Z"/>
+        </svg>         
+      </button>
+  
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ml-auto">
+        {% assign pages = site.html_pages | sort: 'weight' %}
+        {% for site_page in pages %}
+          {% if site_page.title and site_page.weight %}
+            {% unless site_page.url contains 'page' or site_page.url contains 'tags' %}
+              <a class="nav-item nav-link {% if page.url contains site_page.url %} active {% endif %}" href="{% if site_page.external_url %} {{ site_page.external_url }} {% else %} {{ site_page.url | relative_url }} {% endif %}">{{ site_page.title }}</a>
+            {% endunless %}
+          {% endif %}
+        {% endfor %}
+        <span title="Toggle Theme" id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+      </div>
+    </div>
+  
+  </nav>

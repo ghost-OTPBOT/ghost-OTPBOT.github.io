@@ -1,0 +1,22 @@
+<!--
+  Minimal Portfolio by Vyshnav Gangadharan
+  Free for personal and commercial use under the MIT license
+-->
+<!DOCTYPE html>
+
+<html>
+
+{% include head.html %}
+
+<body style="display: flex !important; flex-direction: column !important; height: 100% !important;">
+
+  <main style="margin-top: 1rem !important; flex-shrink: 0 !important;">
+    {% include navbar.html %}
+    {{ content }}
+    </main>
+  
+    {% include footer.html %}
+
+</body>
+
+</html>

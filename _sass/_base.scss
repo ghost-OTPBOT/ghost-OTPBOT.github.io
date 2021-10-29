@@ -1,0 +1,97 @@
+html,
+body {
+    height: 100%;
+    color: #000;
+}
+.content {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.blurbg {
+    background: rgba(255,255,255,.6);
+    backdrop-filter: blur(20px);
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+@media (min-width: 768px) {
+    .height-100 {
+        height: 100%;
+    }
+}
+h1 {
+    font-family: 'Kulim Park', sans-serif;
+    font-weight: 700 !important;
+}
+
+.text {
+    font-family: 'Sen', sans-serif;
+    font-weight: 400;
+}
+
+.description {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.small-heading {
+    font-size: 12px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #00b0ff;
+    font-weight: 600;
+}
+.background-test {
+    position: relative;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@media (min-width: 768px) {
+    .height-100 {
+        height: 100%;
+    }
+}
+
+.bottom-img img {
+    width: 100%;
+    padding-top: 60px;
+}
+
+.container-fluid .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+@media (max-width: 767px) {
+    .logo {
+        padding-top: 48px;
+    }
+}
+.logo {
+    padding-bottom: 20px;
+}
+.social-icon {
+    transition: 0.2s;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+    .social-icon {
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+}
+.social-icon:hover {
+    filter: drop-shadow(0 0 0.75rem #00b0ff);
+    text-decoration: none;
+}
+.btn-outline-dark{
+    font-family: 'Sen', sans-serif;
+}

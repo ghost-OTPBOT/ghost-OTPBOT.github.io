@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+// Custom Fonts
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:wght@600;700&family=Sen:wght@400;700;800&display=swap');
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "base",
+        "navbar";
