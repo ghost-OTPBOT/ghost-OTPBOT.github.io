@@ -1,6 +1,6 @@
 title               : Ghost OTPBOT
 description         : >-                               # >- means to ignore newlines until "url:"
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      ghost-OTPBOT is the most advanced and versatile OTP & SMS capture bot that is capable of getting OTP & SMS codes from victims by impersonating a company or bank. You can use this to get OTP for logins, banks, credit cards, apple pay, and more.
 
 url                 : "https://ghost-otpbot.github.io/"
 repository          :  
