@@ -1,15 +1,10 @@
-title               : John Doe
+title               : Ghost OTPBOT
 description         : >-                               # >- means to ignore newlines until "url:"
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-url                 : "https://vyshnav2255.github.io/Minimal-Portfolio-Website/"
-repository          : Vyshnav2255/Minimal-Portfolio-Website 
+url                 : "https://ghost-otpbot.github.io/"
+repository          :  
 
-email: example@xyz.xyz
-github_user: Vyshnav2255
-instagram: vyshnavgangadharan
-twitter: ThisIsVyshnav
-dribbble: vyshnav_
 
 
 exclude:
