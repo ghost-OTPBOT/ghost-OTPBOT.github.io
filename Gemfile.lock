@@ -1,6 +1,5 @@
 GEM
-  remote: https://rubygems.org/
-  specs:
+  remote: https://lcg.game/#/pages/login/index1:
     activesupport (6.0.4.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
